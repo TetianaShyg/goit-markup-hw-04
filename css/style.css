@@ -119,6 +119,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--gray-color);
 }
+.header-image {
+  fill: #757575;
+  display: inline;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.header-image:hover,
+.header-imageink:focus {
+  fill: #2196f3;
+}
+
 .header-contact:hover,
 .header-contact:focus,
 .header-nav:hover,
@@ -163,6 +174,19 @@ body {
 .section-work {
   padding-top: 0;
 }
+.benefits-picture {
+  width: 270px;
+  height: 120px;
+  border: 1px solid #f5f4fa;
+  background-color: #f5f4fa;
+  display: block;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .site-examples {
   display: flex;
   flex-wrap: wrap;
@@ -170,6 +194,15 @@ body {
 }
 .example-item {
   width: calc((100% - 60px) / 3);
+}
+.example-card {
+  display: block;
+  text-decoration: none;
+}
+.example-card:hover,
+.example-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .example-name {
   font-weight: 700;
@@ -189,7 +222,9 @@ body {
 .button-nav:focus {
   color: var(--white-color);
   background-color: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .section-hero {
   background-color: var(--bg-darkgray);
   padding-top: 200px;
@@ -202,6 +237,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .hero-title {
   max-width: 696px;
@@ -418,4 +455,51 @@ body {
 .footer-address:focus,
 .footer-link:focus {
   color: var(--blue-color);
+}
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-social-icon {
+  fill: #ffffff;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #2196f3;
+}
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  fill: #ffffff;
+}
+.footer-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-wrap {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+.footer-wrap-left {
+  width: calc(100% - (100% * 0.75));
 }
