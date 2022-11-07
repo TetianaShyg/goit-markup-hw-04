@@ -121,9 +121,8 @@ body {
 }
 .header-image {
   fill: #757575;
-  display: inline;
   margin-right: 10px;
-  vertical-align: middle;
+  fill: currentColor;
 }
 .header-image:hover,
 .header-imageink:focus {
@@ -228,7 +227,7 @@ body {
 .section-hero {
   background-color: var(--bg-darkgray);
   padding-top: 200px;
-  padding-bottom: 203px;
+  padding-bottom: 200px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -239,6 +238,7 @@ body {
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
+  height: 600px;
 }
 .hero-title {
   max-width: 696px;
@@ -268,6 +268,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  color: #afb1b8;
 }
 .team-social {
   display: flex;
@@ -280,39 +281,32 @@ body {
 }
 .clients-item {
   width: calc((100% - 150px) / 6);
-  height: 60px;
+  height: 92px;
 }
 .clients-link {
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
-  display: block;
+  border: 1px solid currentColor;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #afb1b8;
 }
 .team-social-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: #2196f3;
-}
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon {
-  fill: #ffffff;
+  color: var(--white-color);
 }
 .clients-icon {
-  fill: #afb1b8;
-}
-.clients-link:focus .clients-icon,
-.clients-link:hover .clients-icon {
-  fill: #2196f3;
+  fill: currentColor;
 }
 .clients-link:focus,
 .clients-link:hover {
-  border-color: #2196f3;
+  color: #2196f3;
 }
 .paragraph-main {
   font-weight: 900;
@@ -488,18 +482,11 @@ body {
 }
 .footer-header {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
 }
 .footer-wrap {
   display: flex;
-  gap: 70px;
-  align-items: baseline;
-}
-.footer-wrap-left {
-  width: calc(100% - (100% * 0.75));
 }
