@@ -118,6 +118,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--gray-color);
+  display: flex;
 }
 .header-image {
   fill: #757575;
@@ -489,4 +490,8 @@ body {
 }
 .footer-wrap {
   display: flex;
+  align-items: baseline;
+}
+.footer-wrap-right {
+  margin-left: 70px;
 }
